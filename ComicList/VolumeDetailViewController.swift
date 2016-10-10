@@ -16,6 +16,7 @@ class VolumeDetailViewController: UIViewController {
 
     // MARK: - Outlets
 
+  
     @IBOutlet private weak var headerView: VolumeHeaderView!
     @IBOutlet private weak var aboutView: VolumeAboutView!
     @IBOutlet private weak var issuesView: VolumeIssuesView!
@@ -91,6 +92,18 @@ class VolumeDetailViewController: UIViewController {
             .map { $0?.isEmpty ?? true }
             .bindTo(aboutView.rx.hidden)
             .addDisposableTo(disposeBag)
+        
+        // Bind WebAbout
+        viewModel.dataForWeb
+            .bindTo(aboutView.dataForWeb)
+            .addDisposableTo(disposeBag)
+        
+        viewModel.dataForWeb
+            .map { $0?.isEmpty ?? true }
+            .bindTo(aboutView.rx.hidden)
+            .addDisposableTo(disposeBag)
+        
+        
 
         // Bind issues
 

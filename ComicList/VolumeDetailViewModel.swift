@@ -22,6 +22,10 @@ protocol VolumeDetailViewModelType: class {
 
     /// The volume description
     var about: Observable<String?> { get }
+    
+    /// The volume description
+    var dataForWeb: Observable<String?> { get }
+    
 
     /// The issues for this volume
     var issues: Observable<[Issue]> { get }
@@ -38,6 +42,14 @@ final class VolumeDetailViewModel: VolumeDetailViewModelType {
     }
 
     private(set) var volume: Volume
+    
+    private(set) lazy var dataForWeb: Observable<String?> = self.client
+        .object(forResource: API.description(volumeIdentifier: self.volume.identifier))
+        .map { (value: VolumeDescription) -> String? in
+            return value.description
+        }
+        .startWith("")
+        .observeOn(MainScheduler.instance)
 
     private(set) lazy var about: Observable<String?> = self.client
         .object(forResource: API.description(volumeIdentifier: self.volume.identifier))

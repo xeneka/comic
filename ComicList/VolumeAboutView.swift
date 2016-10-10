@@ -14,6 +14,12 @@ import RxCocoa
 /// Displays the volume description
 final class VolumeAboutView: UIView {
 
+    @IBOutlet weak var WebAbout: UIWebView!{
+        didSet{
+            WebAbout.backgroundColor = UIColor(named: .background)
+        }
+    }
+    
     @IBOutlet private weak var titleLabel: UILabel! {
         didSet {
             titleLabel.text = NSLocalizedString("ABOUT", comment: "")
@@ -31,4 +37,17 @@ final class VolumeAboutView: UIView {
     var about: AnyObserver<String?> {
         return aboutLabel.rx.text
     }
+    
+    var dataForWeb: AnyObserver<String?>{
+        return UIBindingObserver(UIElement: WebAbout){ WebAbout, dataForWeb in
+            
+            WebAbout.loadHTMLString(dataForWeb!, baseURL: nil)
+            WebAbout.scrollView.isScrollEnabled = true
+        }.asObserver()
+    }
+
+    
+   
+    
+    
 }
