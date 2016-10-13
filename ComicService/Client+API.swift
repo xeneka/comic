@@ -27,4 +27,8 @@ extension Client {
     public func suggestions(forQuery query: String) -> Observable<[Suggestion]> {
         return objects(forResource: API.suggestions(query: query))
     }
+    
+    
+    
+    
 }

@@ -8,12 +8,12 @@
 
 import Foundation
 
-/// A comic issue
-struct Issue {
-
-    /// Issue title
-    let title: String
-
-    /// Cover image URL
-    let coverURL: URL?
-}
+///// A comic issue
+//struct Issue {
+//
+//    /// Issue title
+//    let title: String
+//
+//    /// Cover image URL
+//    let coverURL: URL?
+//}

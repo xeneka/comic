@@ -91,6 +91,7 @@
 		82EC5ECA1DA17A640096F033 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC5EC91DA17A640096F033 /* UIColor+Additions.swift */; };
 		82EC5ECC1DA17E810096F033 /* VolumeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC5ECB1DA17E810096F033 /* VolumeHeaderView.swift */; };
 		82FCADB91DA23AE20091EB53 /* VolumeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCADB81DA23AE20091EB53 /* VolumeDetailViewModel.swift */; };
+		A92E11581DACE6B900BD9567 /* VolumeIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E11571DACE6B900BD9567 /* VolumeIssues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -375,6 +376,7 @@
 		82EC5EC91DA17A640096F033 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		82EC5ECB1DA17E810096F033 /* VolumeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeHeaderView.swift; sourceTree = "<group>"; };
 		82FCADB81DA23AE20091EB53 /* VolumeDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeDetailViewModel.swift; sourceTree = "<group>"; };
+		A92E11571DACE6B900BD9567 /* VolumeIssues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeIssues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +542,7 @@
 				828622511DA9037500CFBD7A /* Response.swift */,
 				828622531DA903F000CFBD7A /* Suggestion.swift */,
 				82A85D041DAA8B85004ADC44 /* VolumeDescription.swift */,
+				A92E11571DACE6B900BD9567 /* VolumeIssues.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1106,6 +1109,7 @@
 				8286224C1DA8F1DB00CFBD7A /* Resource.swift in Sources */,
 				82A85D051DAA8B85004ADC44 /* VolumeDescription.swift in Sources */,
 				828622541DA903F000CFBD7A /* Suggestion.swift in Sources */,
+				A92E11581DACE6B900BD9567 /* VolumeIssues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
