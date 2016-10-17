@@ -83,15 +83,15 @@ class VolumeDetailViewController: UIViewController {
         headerView.didTapButton = viewModel.addOrRemove
 
         // Bind about
-
-        viewModel.about
-            .bindTo(aboutView.about)
-            .addDisposableTo(disposeBag)
-
-        viewModel.about
-            .map { $0?.isEmpty ?? true }
-            .bindTo(aboutView.rx.hidden)
-            .addDisposableTo(disposeBag)
+// Desactivamos about por que lo vamos a hacer por web
+//        viewModel.about
+//            .bindTo(aboutView.about)
+//            .addDisposableTo(disposeBag)
+//
+//        viewModel.about
+//            .map { $0?.isEmpty ?? true }
+//            .bindTo(aboutView.rx.hidden)
+//            .addDisposableTo(disposeBag)
         
         // Bind WebAbout
         viewModel.dataForWeb

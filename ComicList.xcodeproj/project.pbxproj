@@ -33,7 +33,6 @@
 		826608801DA62FC200A45AB4 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 824414841DA2E38500781B61 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		827789F71DA25DA700949E52 /* VolumeAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827789F61DA25DA700949E52 /* VolumeAboutView.swift */; };
 		827789F91DA2679000949E52 /* VolumeIssuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827789F81DA2679000949E52 /* VolumeIssuesView.swift */; };
-		827789FB1DA268F900949E52 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827789FA1DA268F900949E52 /* Issue.swift */; };
 		827B6B691D9EAB78004EC14A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B6B681D9EAB78004EC14A /* ReusableView.swift */; };
 		827B6B6B1D9EACF8004EC14A /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B6B6A1D9EACF8004EC14A /* NibLoadableView.swift */; };
 		827B6B6D1D9EAD45004EC14A /* UITableViewCell+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B6B6C1D9EAD45004EC14A /* UITableViewCell+ReusableView.swift */; };
@@ -319,7 +318,6 @@
 		824414641DA2E38500781B61 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Vendor/RxSwift/Rx.xcodeproj; sourceTree = "<group>"; };
 		827789F61DA25DA700949E52 /* VolumeAboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeAboutView.swift; sourceTree = "<group>"; };
 		827789F81DA2679000949E52 /* VolumeIssuesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeIssuesView.swift; sourceTree = "<group>"; };
-		827789FA1DA268F900949E52 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		827B6B681D9EAB78004EC14A /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		827B6B6A1D9EACF8004EC14A /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		827B6B6C1D9EAD45004EC14A /* UITableViewCell+ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReusableView.swift"; sourceTree = "<group>"; };
@@ -665,7 +663,6 @@
 		82EC5EB31DA1104C0096F033 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				827789FA1DA268F900949E52 /* Issue.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1141,7 +1138,6 @@
 				829847DF1D9D900700C6A9C9 /* SearchSuggestionsCoordinator.swift in Sources */,
 				827B6B691D9EAB78004EC14A /* ReusableView.swift in Sources */,
 				82EC5EAD1DA0E2210096F033 /* CoverView.swift in Sources */,
-				827789FB1DA268F900949E52 /* Issue.swift in Sources */,
 				827B6B6D1D9EAD45004EC14A /* UITableViewCell+ReusableView.swift in Sources */,
 				82A85D031DAA8421004ADC44 /* VolumeContainer+List.swift in Sources */,
 				829847E51D9D962D00C6A9C9 /* SearchSuggestionsViewModel.swift in Sources */,

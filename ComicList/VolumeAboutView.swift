@@ -41,6 +41,12 @@ final class VolumeAboutView: UIView {
     var dataForWeb: AnyObserver<String?>{
         return UIBindingObserver(UIElement: WebAbout){ WebAbout, dataForWeb in
             
+            guard let _ = dataForWeb else{
+                return
+            }
+            
+            
+            
             WebAbout.loadHTMLString(dataForWeb!, baseURL: nil)
             WebAbout.scrollView.isScrollEnabled = true
         }.asObserver()
